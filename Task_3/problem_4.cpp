@@ -24,3 +24,34 @@ public:
 		return time;
 	}
 };
+
+/*
+class Solution
+{
+public:
+
+	int timeRequiredToBuy(vector<int>& tickets, int k)
+{
+	k = tickets[k];
+	int n = tickets.size(), time = 0;
+	queue<int> q;
+	for (int i = 0; i < n; ++i)
+	{
+		q.push(tickets[i]);
+	}
+	while (k--)
+	{
+		n = q.size();
+		while (n>0)
+		{
+			time++;
+			if(k==q.front() && q.front()==1) break;
+			if (q.front() > 1)  q.push(q.front() - 1);
+			q.pop();
+			n--;
+		}
+	}
+	return time;
+	}
+};
+*/
