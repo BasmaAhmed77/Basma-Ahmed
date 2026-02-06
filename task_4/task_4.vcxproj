@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Problem_2.cpp" />
     <ClCompile Include="problem_3.cpp" />
     <ClCompile Include="problem_5.cpp" />
   </ItemGroup>
